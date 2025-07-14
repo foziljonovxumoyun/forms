@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsga Uchish Uchun Ro'yhatdan O'tish</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="header">
+                <div class="planet-animation"></div>
+                <h1>Mars Uzbeklar tomonidan bosib olinish arafasida...(to be continued)</h1>
+                <p>Mars, Saturn uzbeklar uchun qiziqmas, uzbeklar hamma joyda. Siz ham bizga qo'shiling! Shoshiling joylar soni
+                chegaralangan!</p>
+            </div>
+           <!-- Facts -->
+            <div class="mars-facts">
+                <h3>🪐 Mars Haqida Qiziqarli Faktlar</h3>
+                <div class="facts-grid">
+                    <div class="fact-item">📏 Yerdan masofa: 225 million km</div>
+                    <div class="fact-item">🌡️ O'rtacha harorat: -80°C</div>
+                    <div class="fact-item">⏰ Bir kun: 24.6 soat</div>
+                    <div class="fact-item">📅 Bir yil: 687 kun</div>
+                    <div class="fact-item">🏔️ Eng baland tog': Olympus Mons (21km)</div>
+                    <div class="fact-item">💨 Atmosfera: 95% CO₂</div>
+                </div>
+            </div>
+              <!-- Form starts -->
+            <form>
+                <div class="form-section">
+                    <h2>Personal information</h2>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div>
+                                <label for="firstName">Ism <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div>
+                                <label for="lastName">Familiya <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div>
+                                <label for="age">Yosh <span class="required">*</span></label>
+                                <input type="number" id="age" name="age" min="18" max="65" required>
+                            </div>
+                            <div>
+                                <label for="birthDate">Tug'ilgan sana <span class="required">*</span></label>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div>
+                                <label for="birthCity">Tug'ilgan shahar <span class="required">*</span></label>
+                                <input type="text" id="birthCity" name="birthCity" required>
+                            </div>
+                            <div>
+                                <label for="region">Viloyat <span class="required">*</span></label>
+                                <select id="region" name="region" required>
+                                    <option value="">Viloyatni tanlang</option>
+                                    <option value="toshkent">Toshkent</option>
+                                    <option value="andijon">Andijon</option>
+                                    <option value="buxoro">Buxoro</option>
+                                    <option value="fargona">Farg'ona</option>
+                                    <option value="jizzax">Jizzax</option>
+                                    <option value="namangan">Namangan</option>
+                                    <option value="navoiy">Navoiy</option>
+                                    <option value="qashqadaryo">Qashqadaryo</option>
+                                    <option value="qoraqalpogiston">Qoraqalpog'iston</option>
+                                    <option value="samarqand">Samarqand</option>
+                                    <option value="sirdaryo">Sirdaryo</option>
+                                    <option value="surxondaryo">Surxondaryo</option>
+                                    <option value="xorazm">Xorazm</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- Hobbies -->
+                <div class="form-section">
+                    <h2>Hobbies</h2>
+                    <div class="form-group">
+                        <label for="hobbies">Sevimli mashg'ulotlaringiz</label>
+                        <textarea id="hobbies" name="hobbies" placeholder="Sizning qiziqishlaringiz va hobbilaringiz haqida yozing..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whyMars">Nega Marsga uchishni xohlaysiz? <span class="required">*</span></label>
+                        <textarea id="whyMars" name="whyMars" placeholder="Marsga sayohat qilish istagingizning sabablarini yozing..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Money (Eng muhumi)</h2>
+                        <label for="budget">Byudjet (USD) <span class="required">*</span></label>
+                        <input type="number" id="budget" name="budget" min="100000" placeholder="100000" required>
+                    </div>
+                </div>
+                   <!-- Experience -->
+                <div class="form-section">
+                    <h2>Experience and Knowledge</h2>
+                    <div class="form-group">
+                        <label>Ilgari Marsga uchganmisiz?</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="marsYes" name="marsExperience" value="yes">
+                                <label for="marsYes">Ha</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="marsNo" name="marsExperience" value="no">
+                                <label for="marsNo">Yo'q</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="marsKnowledge">Mars haqida bilimlaringiz</label>
+                        <textarea id="marsKnowledge" name="marsKnowledge" placeholder="Mars sayyorasi haqida nimalarni bilasiz?"></textarea>
+                    </div>
+                </div>
+                  <!-- Plans -->
+                <div class="form-section">
+                    <h2>Plans</h2>
+                    <div class="form-group">
+                        <label for="companion">Kim bilan uchmoqchisiz?</label>
+                        <input type="text" id="companion" name="companion" placeholder="Oila a'zolari, do'stlar yoki yolg'iz...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duration">Qancha vaqt uchmoqchisiz? <span class="required">*</span></label>
+                        <select id="duration" name="duration" required>
+                            <option value="">Muddatni tanlang</option>
+                            <option value="1-week">1 hafta</option>
+                            <option value="1-month">1 oy</option>
+                            <option value="3-months">3 oy</option>
+                            <option value="6-months">6 oy</option>
+                            <option value="1-year">1 yil</option>
+                            <option value="permanent">Doimiy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">🚀 Marsga Uchish Uchun Ariza Berish(Ixtiyoriy-majburiy)</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
