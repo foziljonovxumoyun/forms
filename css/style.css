@@ -12,6 +12,7 @@ body {
 }
 
 body::before {
+    
     content: '';
     position: fixed;
     top: 0;
@@ -223,6 +224,7 @@ textarea {
 .submit-btn:active {
     transform: translateY(-1px);
 }
+
 
 @media (max-width: 600px) {
     .container {
